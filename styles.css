@@ -23,23 +23,23 @@ article{
 
 body > header{
 	background-color: teal;
-    margin-left: 20%;
 	margin-bottom: 1em;
+	float: left;
+	width: 79%;
 }
 
 main{
-	margin-left: 20%;
-    margin-bottom: 110px;
+	float: left;
+	width: 79%;
 }
 
 nav{
-	width: 20%;
-	position: absolute;
-	height: 600px;
-	left: 0;
-	top: 0;
 	background-color:rgb(48, 63, 171);
 	padding: 1em;
+	float: left;
+	width: 20%;
+	height: 600px;
+	margin-right: 1%;
 }
 
 nav h1, li, a{ 
@@ -52,11 +52,9 @@ main > article > header{
 
 footer{
 	background-color: rgb(1, 66, 66);
-	position: fixed;
-	bottom: 0;
 	width: 100%;
-	left: 0;
 	text-align: center;
+	clear: both;
 }
 
 footer p {
