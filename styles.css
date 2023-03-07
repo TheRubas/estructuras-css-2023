@@ -1,3 +1,64 @@
- @charset "UTF-8";
 /* CSS Document */
 
+body{
+	font-size: 16px;
+}
+
+*{
+	color: black;
+	box-sizing: border-box;
+}
+
+header, footer{
+	height: 200px;
+	padding: 1em;
+}
+
+article{
+	height: auto;
+	background-color: turquoise;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+body > header{
+	background-color: teal;
+    margin-left: 20%;
+	margin-bottom: 1em;
+}
+
+main{
+	margin-left: 20%;
+    margin-bottom: 110px;
+}
+
+nav{
+	width: 20%;
+	position: absolute;
+	height: 600px;
+	left: 0;
+	top: 0;
+	background-color:rgb(48, 63, 171);
+	padding: 1em;
+}
+
+nav h1, li, a{ 
+	color: white;
+}
+
+main > article > header{
+	background-color:turquoise;
+}
+
+footer{
+	background-color: rgb(1, 66, 66);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	text-align: center;
+}
+
+footer p {
+	color: white;
+}
