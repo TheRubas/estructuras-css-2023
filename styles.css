@@ -3,15 +3,16 @@
 body{
     font-size: 16px;
 }
+
 *{
     color: white;
     box-sizing: border-box;
 }
+
 header, footer{
     height: 200px;
     padding: 1em;
 }
-
 
 article{
     height: auto;
@@ -37,6 +38,7 @@ nav{
 main > article > header{
     background-color:rgb(72, 54, 8)
 }
+
 main{
     width: 100%;
 }
@@ -54,24 +56,33 @@ footer{
     main > header{
         background-color: rgb(36, 36, 36);
     }
+
+    .contenedor{
+        display: flex;
+        gap: 1em;
+        flex-flow: row wrap;
+        flex: 1 0 100%;
+        align-items: flex-start;
+    }
+
     nav{
-        display: inline-block;
-        width: 20%;
+        flex: 1 0 0;
         height: 600px;
-        margin-right: 1%;
         background-color: rgb(17, 48, 38);
     }
+
     main{
-        display: inline-block;
-        width: 78%;
-        vertical-align: top;
+        flex: 4 0 0;
     }
+
     article{
         background-color:rgb(22, 53, 20);
     }
+
     main > article > header{
         background-color:rgb(36, 95, 38)
     }
+    
     footer{
         background-color:rgb(85, 89, 26);
     }
@@ -81,18 +92,26 @@ footer{
 /* Version laptop */
 @media (min-width: 1024px){
     /* Aquí inician los estilos para laptop */
+    .contenedor{
+        flex-direction: row-reverse;
+    }
+
     main > header{
         background-color: rgb(18, 68, 24);
     }
+    
     nav{
         background-color: rgb(86, 110, 24);
     }
+    
     article{
         background-color:rgb(27, 84, 44);
     }
+    
     main > article > header{
         background-color:rgb(14, 34, 79)
     }
+    
     footer{
         background-color:rgb(4, 0, 81);
     }
